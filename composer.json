@@ -1,0 +1,13 @@
+{
+    "name": "lukasbesch/shortcode-year-or-years",
+    "description": "WordPress Plugin that provides a shortcode to display the current year, optionally including a start year. Commonly used in copyright notices.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lukas Besch",
+            "email": "connect@lukasbesch.com"
+        }
+    ],
+    "require": {}
+}
