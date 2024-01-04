@@ -22,7 +22,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # Get the year
       - name: Store year information as environment variables
@@ -39,7 +39,7 @@ jobs:
           sed -i "s/${{ env.PREVIOUS_YEAR }}/${{ env.CURRENT_YEAR }}/g" ${{ env.README_FILE }}
 
       # Add and commit changed README.md
-      - uses: EndBug/add-and-commit@v7
+      - uses: EndBug/add-and-commit@v9
         with:
           # The arguments for the `git add` command (see the paragraph below for more info)
           # Default: '.'
