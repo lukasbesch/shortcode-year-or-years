@@ -1,0 +1,18 @@
+# Prevent disabling of GitHub Actions after 60 days of inactivity
+
+name: Keepalive
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+
+jobs:
+  cronjob-based-github-action:
+    name: Cronjob based github action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/keepalive-workflow@v1
+        with:
+          committer_username: Lukas Besch
+          committer_email: connect@lukasbesch.com
+          commit_message: "🧟 keepalive"
