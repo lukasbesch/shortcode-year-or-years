@@ -16,19 +16,19 @@ Alternatively download the latest release from GitHub and install it into the pl
 
 ### Show current year
     [year_or_years]
-    // 2025
+    // 2026
 
 ### Show current year and a start year
 
     [year_or_years from="2019"]
-    // 2019–2025
+    // 2019–2026
 
 The start year will only be displayed if it is lower than the current year:
 
-    [year_or_years from="2025"]
-    // 2025
+    [year_or_years from="2026"]
+    // 2026
 
 Optionally specify a custom separator:
 
     [year_or_years from="1984" separator=" until "]
-    // 1984 until 2025
+    // 1984 until 2026
